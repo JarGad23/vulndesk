@@ -27,3 +27,21 @@ npm --prefix frontend run dev
 
 Aplikacja: http://localhost:3000, API: http://localhost:3001/api/health.
 Dane dostępowe w `docker-compose.yml` służą wyłącznie lokalnej bazie.
+
+Pierwszy administrator (hasło min. 12 znaków; `read -s` nie pokazuje go na ekranie ani w historii):
+
+```sh
+read -s ADMIN_PASSWORD && export ADMIN_PASSWORD
+```
+
+```sh
+npm --prefix backend run build && ADMIN_EMAIL=admin@example.com npm --prefix backend run admin:create; unset ADMIN_PASSWORD
+```
+
+## Testy API
+
+Wymagają uruchomionej bazy. Same tworzą i czyszczą osobną bazę `vulndesk_test`.
+
+```sh
+npm --prefix backend run test:e2e
+```
