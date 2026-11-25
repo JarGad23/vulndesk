@@ -119,3 +119,10 @@ model HistoryEntry {
 
   @@index([vulnerabilityId, createdAt])
 }
+
+/// Fixed one-minute window, shared by all API instances.
+model LoginWindow {
+  ip          String   @id
+  windowStart DateTime @db.Timestamptz
+  attempts    Int
+}
