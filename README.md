@@ -38,9 +38,9 @@ read -s ADMIN_PASSWORD && export ADMIN_PASSWORD
 npm --prefix backend run build && ADMIN_EMAIL=admin@example.com npm --prefix backend run admin:create; unset ADMIN_PASSWORD
 ```
 
-## Testy API
+## Testy
 
-Wymagają uruchomionej bazy. Same tworzą i czyszczą osobną bazę `vulndesk_test`.
+Testy jednostkowe: `npm --prefix backend test`. Testy API wymagają uruchomionej bazy. Same tworzą i czyszczą osobną bazę `vulndesk_test`.
 
 ```sh
 npm --prefix backend run test:e2e
