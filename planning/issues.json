@@ -1,0 +1,15 @@
+[
+{"title":"Repozytorium, szkielet aplikacji i lokalna baza","stage":"Przygotowanie","req":["N8"],"o":1,"m":2,"p":4,"done":["frontend i backend uruchamiają się lokalnie","PostgreSQL działa przez docker compose","README opisuje uruchomienie"],"actual":null},
+{"title":"Model danych i diagramy","stage":"Przygotowanie","req":["F1-F10"],"o":2,"m":3,"p":5,"done":["schemat Prisma i migracja","diagramy: przypadki użycia, ERD, stany"],"actual":null},
+{"title":"API: logowanie, role i użytkownicy","stage":"Backend","req":["F1","F2","N1","N2","N4"],"o":2,"m":3,"p":6,"done":["logowanie i blokada konta","testy 401, 403 i limitu prób"],"actual":null},
+{"title":"API: projekty","stage":"Backend","req":["F3"],"o":0.5,"m":1,"p":2,"done":["CRUD z archiwizacją","testy uprawnień"],"actual":null},
+{"title":"API: import npm audit i duplikaty","stage":"Backend","req":["F4","F5","N3"],"o":2,"m":3,"p":6,"done":["adapter formatu v2","import w transakcji","testy: poprawny, błędny, powtórny, ponownie otwierający"],"actual":null},
+{"title":"API: statusy, SLA i historia","stage":"Backend","req":["F6","F8","F9","N7"],"o":1.5,"m":2.5,"p":4,"done":["testy wszystkich przejść i terminów","zapis historii"],"actual":null},
+{"title":"API: lista i dashboard","stage":"Backend","req":["F7","F10","N5"],"o":1,"m":1.5,"p":3,"done":["filtry i stronicowanie","pomiar przy 1000 rekordów"],"actual":null},
+{"title":"UI: logowanie, układ, użytkownicy i projekty","stage":"Frontend","req":["F1","F2","F3","N6"],"o":2,"m":3,"p":5,"done":["widoki zgodne z rolą","stany ładowania i błędu"],"actual":null},
+{"title":"UI: import, lista i szczegóły podatności","stage":"Frontend","req":["F4","F7","F8","F9","N6"],"o":2.5,"m":4,"p":7,"done":["wynik importu","filtry w adresie URL","zmiana statusu i historia"],"actual":null},
+{"title":"UI: dashboard","stage":"Frontend","req":["F10","N6"],"o":0.5,"m":1.5,"p":3,"done":["liczniki według ważności i po terminie","odnośniki do przefiltrowanej listy"],"actual":null},
+{"title":"CI i test E2E głównej ścieżki","stage":"Wydanie","req":["N7"],"o":1,"m":2,"p":4,"done":["lint, typy, testy i pokrycie w GitHub Actions","E2E: import do zamknięcia podatności"],"actual":null},
+{"title":"Wdrożenie demonstracyjne","stage":"Wydanie","req":[],"o":1,"m":1.5,"p":4,"done":["publiczny adres działa","fikcyjne dane demo i konta"],"actual":null},
+{"title":"Dokumentacja końcowa PDF","stage":"Wydanie","req":[],"o":3,"m":4,"p":6,"done":["6-8 stron ze zrzutami","plan a rzeczywisty czas","instrukcja i możliwość rozbudowy"],"actual":null}
+]
